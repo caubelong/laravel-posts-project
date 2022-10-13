@@ -1,0 +1,212 @@
+@media (max-width:2500px){
+    #menu-bar{
+        display: none;
+    }
+    .header-menu-right{
+        display: none;
+    }
+    .header{
+        display: block;
+    }
+    .header-menu-right{
+        display: none;
+    }
+    .header .header-brand{
+        width: 50%;
+        margin-left: 120px;
+    }
+    .header-menu-right{
+        display: none;
+    }
+    .header-brand{
+        margin-right: auto;
+    }
+    .menu-mobile-wrap {
+        display: none;
+    }
+    .menu-show-mobile{
+        display: none;
+    }
+    }
+@media (max-width:740px){
+    .banner{
+        display: none;
+    }
+    .menu-bar-pc{
+        display: none;
+    }
+    .header-menu-right{
+        display: block;
+    }
+    .header .header-brand{
+        margin-left: 0;
+        width: 100%;
+        justify-content: space-around;
+    }
+    .header-tag-news{
+        display: none;
+    }
+    /* menu nav bar */
+    #menu-bar{
+        position: absolute;
+        top:60px;
+        left: 0;
+    }
+    .menu-header-name{
+        margin-bottom: 0;
+        margin-top: 0.8rem;
+        border-bottom: 1px solid var(--bg-primary);
+        padding:1rem 0.5rem;
+    }
+    .menu-header {
+        border: 1px solid #ccc;
+    }
+    .menu-content{
+        background-color: var(--color-white);
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        z-index: 1000;
+    }
+    .menu-list {
+        margin: 1rem 0;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap:wrap;
+    }
+    .menu-item{
+        border:1px solid #ccc;
+        border-radius: 7px;
+        font-size: 12px;
+        flex-basis: 45%;
+        margin-top: 1rem;
+        padding:10px;
+        text-align: center;
+    }
+    .menu-list .menu-item .menu-item-icon{
+        color:var(--bg-primary);
+        margin:0 0.5rem;
+    }
+    .menu-list:last-child{
+        padding-bottom: 1rem;
+    }
+    .chil-category-posts-img{
+        width: 100%;
+        height: 150px;
+    }
+    .post-by-parentCat .text-wrap-desc{
+        margin-bottom: 0;
+    }
+    .post-by-parentCat .text-wrap-title{
+        margin-top: 0;
+    }
+    /*menu mobile*/
+    .menu-mobile-wrap{
+        position: fixed;
+        width: 100%;
+        z-index: 999;
+        background: #FDA13E;
+        overflow: auto;
+        top: 1px;
+        bottom: 0;
+        display: none;
+    }
+    .menu-show-mobile{
+        display: block;
+    }
+    .menu-mobile-icon{
+        font-size: 16px;
+        color: #FFFFFF;
+        position: relative;
+        top: 8px;
+    }
+    .btn-close-nav-mb{
+        display: flex;
+        justify-content: flex-end;
+        font-size: 16px;
+        color: #FFFFFF;
+        padding-right: 2rem;
+        margin-top: 20px;
+    }
+    .list-mobile-item{
+        color: #FFFFFF;
+        margin-bottom: 1rem;
+        list-style: none;
+    }
+    .icon-dropdown-menu-mb{
+        padding-right: 3rem;
+        float: right;
+    }
+/*    submenu*/
+    .sub-menu-item{
+        list-style: none;
+    }
+    .sub-menu-mobile {
+        position: relative;
+        padding-left: 0;
+        width: 50%;
+        top: 4px;
+        right: -10px;
+        display: none;
+    }
+    .active{
+        display: block;
+    }
+    .post-by-category-img{
+        width: 100%;
+        height: 150px
+    }
+/*    detail post same*/
+    .same-category-category-name{
+        display: none;
+    }
+
+
+/*    tablet*/
+@media (max-width:900px) {
+    .box-2-info .item-header {
+        word-wrap: break-word;
+        white-space: normal;
+        overflow: hidden;
+        display: -webkit-box;
+        text-overflow: ellipsis;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        font-size: 15px;
+    }
+
+    .content-right {
+        display: none;
+    }
+
+    .content-left .item-description {
+        margin-bottom: 3rem;
+    }
+
+    .item.slider-content-box {
+        padding-left: 30px;
+    }
+
+    .menu-bar-pc {
+        display: none;
+    }
+
+    .header-tag-news {
+        display: none;
+    }
+
+    #menu-bar {
+        display: block;
+        z-index: 999;
+    }
+
+    .header-menu-right-mb {
+        display: block;
+    }
+
+    .header-brand {
+        width: 100%;
+    }
+}
+}
+
+
+

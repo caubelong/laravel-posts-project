@@ -1,0 +1,38 @@
+    @media (max-width:740px) {
+        #nav-container{
+            display: none;
+        }
+        #nav-container.active{
+            display: block;
+            position: absolute;
+            top:0;
+            left: 0;
+            bottom: 0;
+            z-index: 1000;
+        }
+
+        .hidden{
+            display: none;
+        }
+        .overfolow{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background: #fff;
+            opacity: 0.3;
+            z-index: 199;
+        }
+        .showmenu-link{
+            opacity: 1;
+        }
+        /*detail post*/
+        
+    }
+
+    @media (max-width:1600px){
+
+    }

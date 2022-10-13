@@ -1,0 +1,200 @@
+/* header */
+.header{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0.5rem;
+    border-bottom: 1px solid var(--border-primary);
+    align-items: center;
+    background-color: var(--bg-primary);
+    margin:0;
+}
+.header .header-brand{
+    padding:1.5rem 1rem;
+    line-height:1rem;
+    display: flex;
+}
+.header .header-brand .header-brand-name{
+    margin-bottom: 0;
+    color:var(--color-white);
+    font-size: 1.5rem;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.header-tag-news .tag-news-list{
+    list-style: none;
+    display: flex;
+    margin-bottom: 0;
+    color:var(--color-white);
+    margin-left: 1rem;
+}
+.header-tag-news .tag-news-link{
+    color: #fff;
+    text-decoration: none;
+}
+.header-tag-news .tag-news-list .tag-news-item{
+    border: 1px solid var(--color-white);
+    border-radius: 1rem;
+    padding:7px 1rem;
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+.icon-right{
+    font-size: 1.6rem;
+    color:var(--color-white);
+    margin-right: 0.8rem;
+    cursor: pointer;
+}
+/* Menu nav bar */
+.menu-item{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+/* Menu bar pc */
+.menu-bar-pc{
+    background: #A70E1A;
+}
+.menu-bar-pc .menu-pc-list{
+    display: flex;
+    margin-bottom: 0;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.menu-bar-pc .menu-pc-list .menu-pc-item{
+    margin-right: 1rem;
+    list-style: none;
+    cursor: pointer;
+    color:var(--color-white);
+    padding:8px;
+}
+.menu-bar-pc .menu-pc-list .menu-pc-item:hover{
+    background-color: #980D17;
+}
+.menu-bar-pc .menu-pc-icon{
+    color:var(--color-white);
+}
+.menu-category-wrapper{
+    background-color: var(--color-white);
+    z-index: 1000;
+    margin-top: -10px;
+}
+.menu-category-wrapper .category-menu-list{
+    list-style: none;
+    margin-top: 1rem;
+    color:#777;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+.menu-category-wrapper .category-menu-list .category-menu-item:first-child{
+    border-left: 4px solid var(--bg-primary);
+    padding-left: 8px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color:var(--color-black)
+}
+.menu-category-wrapper .category-menu-list .category-menu-item:hover{
+    color:var(--color-black);
+    opacity: 0.8;
+}
+.menu-bar-pc{
+    position: relative;
+}
+.show-menu-pc{
+    position: absolute;
+    top: 136px;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: none;
+}
+
+/* css info user header*/
+/* menu user */
+.user-login-link{
+    color:#fff;
+    text-decoration: none;
+    margin-left: 3px;
+}
+.user-login-link:hover{
+    color:#fff;
+    text-decoration: none;
+}
+/* user */
+.user_name{
+    text-transform: uppercase;
+    font-size:16px;
+    margin-right:5px;
+    margin-bottom: 0;
+}
+.user_name::after{
+    width: 0px;
+    height: 0;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-top: 5px solid #fff;
+    position: absolute;
+    top: 18px;
+    right: 0;
+    content: '';
+}
+.user-menu{
+    position: absolute;
+    background-color: var(--color-white);
+    top: 43px;
+    right: 353px;
+    z-index: 999;
+    border-radius: 5px;
+    display: none;
+    padding: 10px;
+    box-shadow: 0px 2px 8px rgb(0 0 0 / 10%);
+}
+.active{
+    display: block;
+}
+.user-menu-list{
+    padding-left: 0;
+}
+.user-menu-list::before{
+    width: 15px;
+    height: 15px;
+    border: solid #e5e5e5;
+    border-width: 0 1px 1px 0;
+    content: '';
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    background: #fff;
+    -webkit-transform: rotate(225deg);
+    transform: rotate(225deg);
+}
+.user-menu-list-item{
+    list-style: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.user-menu-item-link{
+    text-decoration: none;
+    color:var(--color-black);
+    width: 100%;
+    display: block;
+}
+.user-menu-item-link:hover{
+    text-decoration: none;
+    color:#60A3D9;
+}
+.content-category-name:nth-child(1){
+    margin-top: 20px;
+}
+/* css info user navbar */
+.menu-list-info{
+    display: flex;
+    border-bottom: 1px solid #000000;
+    padding-bottom: 10px;
+}
+.info-avatar-user{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}

@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+}
+/* form register */
+body {
+    min-height:100%;
+}
+#form-user{
+    width: 400px;
+    margin:60px auto;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding:20px;
+    background-color: #fff;
+}
+#form-user .form-user-header{
+    text-align: center;
+    text-transform: uppercase;
+    padding:10px 0;
+}
+#form-user .input{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    border:1px solid #EDE4E3;
+    color: rgb(38, 50, 56);
+    font-weight: 700;
+    font-size: 14px;
+    font-family: 'Ubuntu', sans-serif;
+    padding:10px;
+    outline: none;
+}
+#form-user .btn-register{
+    width: 50%;
+    margin-left:80px;
+    height: 30px;
+    color:#fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding:20px 0;
+    border-radius: 20px;
+    line-height: 0px;
+}
+#form-user .forget-password-link{
+    text-decoration: none;
+    color:#000000;
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;;
+}
+#form-user .forget-password-link:hover{
+    opacity: 0.7;
+}
+#form-user .form-description .forget-login{
+    text-decoration: none;
+    color:rgb(20, 110, 190);
+}
+#form-user .form-description{
+    margin-top: 20px;
+    text-align: center;
+}
+#form-user .form-description .forget-login:hover{
+    opacity: 0.7;
+}
+.error_validated{
+    color:red;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    font-family: sans-serif;;
+    display: block;
+    font-weight: 700;
+}
