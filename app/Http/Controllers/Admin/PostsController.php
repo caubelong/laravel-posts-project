@@ -80,9 +80,8 @@ class PostsController extends Controller
         //
         $request->validated();
         $generatedImg='';
-        $title=$this->replaceImg($request->title);
         if($request->cover_img){
-            $generatedImg = 'image'.time().'-'.$title.'.'.$request->cover_img->extension();
+            $generatedImg = 'image'.time().'-'.$request->cover_img->extension();
             // tạo tên khác để lưu vào db tránh trùng ảnh
             $request->cover_img->move(public_path('img'),$generatedImg);
         }else{
@@ -146,9 +145,8 @@ class PostsController extends Controller
         $request->validated();
         $img_cover_posts = Posts::find($id);
         $generatedImg='';
-        $title=$this->replaceImg($request->title);
         if($request->cover_img){
-            $generatedImg = 'img'.time().'-'.$title.'.'.$request->cover_img->extension(); // tao ten khac de luu vao db tranh trung anh
+            $generatedImg = 'img'.time().'-'.$request->cover_img->extension(); // tao ten khac de luu vao db tranh trung anh
             $request->cover_img->move(public_path('img'),$generatedImg);
         }else{
             $generatedImg=$img_cover_posts->cover_img;

@@ -26,9 +26,6 @@ use App\Http\Controllers\Admin\AdminManagerController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
 Route::group(['prefix'=>'admin','middleware'=>'admin'],function () {
     Route::resource('categories', CategoryController::class);
@@ -46,7 +43,7 @@ Route::group(['prefix'=>'admin','middleware'=>'checkAdmin'],function () {
     Route::post('update-pw-admin',[AdminManagerController::class,'changePw']);
 });
 Route::prefix('/')->group(function () {
-    Route::resource('home', HomeController::class);
+    Route::resource('/home', HomeController::class);
     Route::resource('user-info', UserDetailController::class);
     Route::post('push-comment',[CommentController::class,'pushComment']);
     Route::get('/user-change-password',[UserDetailController::class,'changeUserPassword']);

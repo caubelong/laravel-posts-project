@@ -21,6 +21,7 @@ class Posts extends Model
     public function comments(){
         return $this->hasMany(Comment::class,'post_id','p_id');
     }
+    
     public function filterPost($filters,$keyword=null){
         DB::enableQueryLog(); // luu lai cau truy van sql
        $users = DB::table('posts')
