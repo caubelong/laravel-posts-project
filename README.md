@@ -53,6 +53,12 @@ Thank you for considering contributing to the Laravel framework! The contributio
 
 ## Code of Conduct
 
+
+
+
+chạy file seeder CreateAdminAccSeeder để tạo tài khoản admin
+
+
 In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
 ## Security Vulnerabilities
